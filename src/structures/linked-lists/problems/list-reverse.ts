@@ -5,6 +5,14 @@
 
 import { SinglyLinkedList as ListNode } from '../singly-linked-list';
 
-export const reverseList = (head: ListNode<number>): ListNode<number> => {
-  return head;
+export const reverseList = <T>(head: ListNode<T>): ListNode<T> => {
+  let iterator = head;
+  let result: ListNode<T> | null = null;
+
+  do {
+    result = new ListNode(iterator.value, result);
+    iterator = iterator.next;
+  } while (iterator);
+
+  return result;
 };
