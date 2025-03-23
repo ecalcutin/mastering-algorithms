@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ecalcutin/mastering-algorithms/issues"
   },
-  "homepage": "https://github.com/ecalcutin/mastering-algorithms#readme"
+  "homepage": "https://github.com/ecalcutin/mastering-algorithms#readme",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
 }
